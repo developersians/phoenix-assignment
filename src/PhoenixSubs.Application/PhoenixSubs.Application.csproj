@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Plans\GetAll\" />
+    <Folder Include="SubscribedPlans\GetAll\" />
+    <Folder Include="SubscribedPlans\Create\" />
+    <Folder Include="Users\GetAll\" />
+  </ItemGroup>
+
+</Project>
