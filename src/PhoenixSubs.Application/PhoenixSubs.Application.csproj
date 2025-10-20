@@ -8,8 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Plans\GetAll\" />
-    <Folder Include="SubscribedPlans\GetAll\" />
-    <Folder Include="SubscribedPlans\Create\" />
     <Folder Include="Users\GetAll\" />
   </ItemGroup>
 

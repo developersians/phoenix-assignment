@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using PhoenixSubs.Domain;
 using PhoenixSubs.Infrastructure.Data;
 
 namespace PhoenixSubs.Infrastructure;
@@ -13,7 +14,7 @@ public static class DependencyInjection
                 .UseSqlServer(connectionString: configuration.GetConnectionString("development"))
         );
 
-        //services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<ISubscribedPlanRepository, SubscribedPlanRepository>();
 
         return services;
     }
