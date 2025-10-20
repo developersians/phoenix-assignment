@@ -13,4 +13,12 @@
     <Folder Include="Users\GetAll\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhoenixSubs.Domain\PhoenixSubs.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

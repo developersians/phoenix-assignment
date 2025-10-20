@@ -8,12 +8,21 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Controllers\Plans\" />
     <Folder Include="Controllers\SubscribedPlans\" />
     <Folder Include="Controllers\Users\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhoenixSubs.Infrastructure\PhoenixSubs.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
