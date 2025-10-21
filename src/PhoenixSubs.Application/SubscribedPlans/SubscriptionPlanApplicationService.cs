@@ -10,4 +10,26 @@ public sealed class SubscriptionPlanApplicationService(
     {
         return await subscribedPlanRepository.GetAllAsync(cancellationToken);
     }
+
+    public async Task<bool> ActivateAsync(
+        Guid userId,
+        Guid planId,
+        CancellationToken cancellationToken = default)
+    {
+        return await subscribedPlanRepository.ActivateAsync(
+            userId,
+            planId,
+            cancellationToken);
+    }
+
+    public async Task<bool> Deactivate(
+        Guid userId,
+        Guid subscriptionId,
+        CancellationToken cancellationToken = default)
+    {
+        return await subscribedPlanRepository.DeactivateAsync(
+            userId,
+            subscriptionId,
+            cancellationToken);
+    }
 }
