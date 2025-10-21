@@ -14,6 +14,8 @@ public static class DependencyInjection
                 .UseSqlServer(connectionString: configuration.GetConnectionString("development"))
         );
 
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IPlanRepository, PlanRepository>();
         services.AddScoped<ISubscribedPlanRepository, SubscribedPlanRepository>();
 
         return services;

@@ -16,11 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Plans\" />
-    <Folder Include="Controllers\Users\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\PhoenixSubs.Infrastructure\PhoenixSubs.Infrastructure.csproj" />
   </ItemGroup>
 

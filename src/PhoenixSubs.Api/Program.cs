@@ -12,6 +12,8 @@ builder.Services.AddApplicationLayer();
 builder.Services.AddInfrastructureLayer(builder.Configuration);
 builder.Services.AddApiLayer();
 
+builder.Services.AddHostedService<DataSeederHostedService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

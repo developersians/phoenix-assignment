@@ -15,7 +15,9 @@ namespace PhoenixSubs.Infrastructure.Data
                 x.RegisteredDate,
                 x.StartDate,
                 x.EndDate,
-                x.IsActive
+                x.IsActive,
+                x.CreatedAt,
+                x.LastUpdatedAt
             })
             .ToListAsync();
 
@@ -26,7 +28,9 @@ namespace PhoenixSubs.Infrastructure.Data
                 x.RegisteredDate,
                 x.StartDate,
                 x.EndDate,
-                x.IsActive));
+                x.IsActive,
+                x.CreatedAt,
+                x.LastUpdatedAt));
         }
     }
 }

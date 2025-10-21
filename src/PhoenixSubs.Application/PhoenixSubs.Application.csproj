@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Plans\GetAll\" />
-    <Folder Include="Users\GetAll\" />
+    <Compile Remove="Plans\GetAll\**" />
+    <Compile Remove="Users\GetAll\**" />
+    <EmbeddedResource Remove="Plans\GetAll\**" />
+    <EmbeddedResource Remove="Users\GetAll\**" />
+    <None Remove="Plans\GetAll\**" />
+    <None Remove="Users\GetAll\**" />
   </ItemGroup>
 
   <ItemGroup>

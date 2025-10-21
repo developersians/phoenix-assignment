@@ -7,5 +7,7 @@ public sealed record SubscribedPlanDto(
     DateTime RegisteredDate,
     DateOnly StartDate,
     DateOnly EndDate,
-    bool IsActive
+    bool IsActive,
+    DateTime CreatedAt,
+    DateTime LastUpdatedAt
 );

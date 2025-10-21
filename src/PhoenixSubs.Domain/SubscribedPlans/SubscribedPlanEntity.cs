@@ -23,6 +23,7 @@ public sealed class SubscribedPlanEntity : Entity
     {
         var subscription = new SubscribedPlanEntity
         {
+            Id = Guid.NewGuid(),
             UserId = userId,
             PlanId = planId,
             RegisteredDate = registeredDate,

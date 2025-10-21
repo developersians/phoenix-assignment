@@ -10,4 +10,18 @@ public sealed class PlanEntity : Entity
     public PlanDuration Duration { get; private set; }
     public PlanGroup Group { get; private set; }
     public ICollection<SubscribedPlanEntity> Subscriptions { get; private set; } = [];
+
+    public static PlanEntity Create(
+        string title,
+        PlanDuration duration,
+        PlanGroup group)
+    {
+        return new PlanEntity
+        {
+            Id = Guid.NewGuid(),
+            Title = title,
+            Duration = duration,
+            Group = group
+        };
+    }
 }
